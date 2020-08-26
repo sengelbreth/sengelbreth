@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Amiko-Bold';}
+	.st4{font-size:40px;}
+</style>
+<g>
+	<rect x="0.5" y="0.5" width="1919" height="1079"/>
+	<path d="M1919,1v1078H1V1H1919 M1920,0H0v1080h1920V0L1920,0z"/>
+</g>
+<rect x="223" y="170" class="st0" width="1473" height="681"/>
+<g>
+	<rect x="1338.5" y="818.5" width="279" height="65"/>
+	<path d="M1617,819v64h-278v-64H1617 M1618,818h-280v66h280V818L1618,818z"/>
+</g>
+<rect x="1378.96" y="827.55" class="st1" width="414.04" height="129.45"/>
+<text transform="matrix(1 0 0 1 1378.9551 857.7109)" class="st2 st3 st4">Frontpage</text>
+<rect x="320" y="119" width="406" height="100"/>
+<rect x="371.07" y="152.24" class="st1" width="546.88" height="134.29"/>
+<text transform="matrix(1 0 0 1 371.0674 182.3955)" class="st2 st3 st4">HI, I am Sophie</text>
+</svg>
