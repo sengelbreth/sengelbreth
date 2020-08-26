@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+}
+
+#scene {
+    width: 100vw;
+    height: 56vw;
+    position: relative;
+    background-image: url(img/baggrund.svg);
+
+}
+
+.hide {
+    display: none;
+}
+
+/*  kanpper og bokse */
+
+.start {
+    position: absolute;
+    top: 30%;
+    left: 40vw;
+    height: 20vw;
+    width: 20vw;
+    cursor: pointer;
+
+}
+
+@keyframes puls {
+    to {
+        transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.puls {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.puls:hover,
+.puls:focus,
+.puls:active {
+    animation-name: puls;
+    animation-name: puls;
+    animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+#dilemma_container {
+    position: absolute;
+    height: 25vw;
+    width: 40vw;
+    left: 65vw;
+    top: 1vw;
+    z-index: 3;
+}
+
+.dilemma_info {
+    position: absolute;
+    width: 32vw;
+    top: 40%;
+    left: -50%;
+}
+
+.dilemma_svar1 {
+    left: 35%;
+    top: 42%;
+    bottom: 3vw;
+    width: 18vw;
+    cursor: pointer;
+    /* z-index: 4;*/
+    position: absolute;
+}
+
+.dilemma_svar2 {
+    left: 35%;
+    top: 70%;
+    bottom: 3vw;
+    width: 18vw;
+    cursor: pointer;
+    /*z-index: 4;*/
+    position: absolute;
+}
+
+
+.afslut_img {
+    position: absolute;
+    width: 40vw;
+    top: 3vw;
+    left: 16vw;
+}
+
+.replay {
+    position: absolute;
+    top: 10vw;
+    left: 2.1vw;
+    height: 10vw;
+    width: 10vw;
+    cursor: pointer;
+}
+
+
+
+.link {
+    position: absolute;
+    width: 10vw;
+    height: 20vw;
+    top: -9%;
+    left: 2%;
+}
+
+
+
+/******* offer container ting********/
+
+#offer_container {
+    position: absolute;
+    left: -12%;
+    top: 20%;
+}
+
+.offer_start_pos {
+    left: -12%;
+    top: 20%;
+
+}
+
+.offer_move_right {
+    animation-name: offer_move_right_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes offer_move_right_kf {
+    0% {
+        left: -12%;
+
+    }
+    100% {
+        left: 29%;
+    }
+}
+
+.offer_graeder_pos {
+    left: 32%;
+    top: 20%;
+
+}
+
+.offer_glad_pos {
+    left: 32%;
+    top: 20%;
+
+}
+
+/******* offer sprite********/
+
+#offer_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    z-index: 2;
+    width: 15vw;
+    height: 30vw;
+}
+
+.offer_walkcycle_right {
+    animation-name: offer_walkcycle_right_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(6);
+
+}
+
+@keyframes offer_walkcycle_right_kf {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -600% 0;
+    }
+}
+
+.offer_graeder {
+    animation-name: offer_graeder_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+
+}
+
+@keyframes offer_graeder_kf {
+    0% {
+        background-position: 0 -600%;
+    }
+    100% {
+        background-position: -300% -600%;
+    }
+}
+
+.offer_glad {
+    animation-name: offer_glad_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: steps(3);
+
+}
+
+@keyframes offer_glad_kf {
+    0% {
+        background-position: 0 -700%;
+    }
+    100% {
+        background-position: -300% -700%;
+    }
+}
+
+/******* sender container ting********/
+
+#sender_container {
+    position: absolute;
+    left: -10%;
+    top: 40%;
+}
+
+
+.sender_start_pos {
+    left: -10%;
+    top: 40%;
+}
+
+.sender_move_right {
+    animation-name: sender_move_right_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sender_move_right_kf {
+    0% {
+        left: -10%;
+
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.sender_kigger_pos {
+    left: 10%;
+    top: 40%;
+}
+
+/******* sender sprite********/
+
+#sender_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    z-index: 2;
+    width: 15vw;
+    height: 30vw;
+}
+
+.sender_walkcycle_right {
+    animation-name: sender_walkcycle_right_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(6);
+
+}
+
+@keyframes sender_walkcycle_right_kf {
+    0% {
+        background-position: 0 -100%;
+    }
+    100% {
+        background-position: -600% -100%;
+    }
+}
+
+.kiggerPaaTelefon {
+    animation-name: kiggerPaaTelefon_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4);
+}
+
+@keyframes kiggerPaaTelefon_kf {
+    0% {
+        background-position: 0 -200%;
+    }
+    100% {
+        background-position: -400% -200%;
+    }
+}
+
+/******* modtager container ting********/
+
+#modtager_container {
+    position: absolute;
+    top: 40%;
+}
+
+.modtager_start_pos {
+    left: 110%;
+    top: 40%;
+}
+
+
+.modtager_move_left {
+    animation-name: modtager_move_left_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes modtager_move_left_kf {
+    0% {
+        left: 110%;
+    }
+    100% {
+        left: 70%;
+    }
+}
+
+
+.modtager_telefon_pos {
+    left: 70%;
+    top: 40%;
+}
+
+
+/******* modtager sprite ting********/
+
+#modtager_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    z-index: 2;
+    width: 17vw;
+    height: 34vw;
+}
+
+.modtager_walkcycle_left {
+    animation-name: modtager_walkcycle_left_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+}
+
+@keyframes modtager_walkcycle_left_kf {
+    0% {
+        background-position: 0 -400%;
+    }
+    100% {
+        background-position: -500% -400%;
+    }
+}
+
+.KiggerPaaTelefon_modtager {
+    animation-name: KiggerPaaTelefon_modtager_kf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(5);
+}
+
+@keyframes KiggerPaaTelefon_modtager_kf {
+    0% {
+        background-position: 0 -500%;
+    }
+
+    100% {
+        background-position: 500% -500%;
+    }
+}
+
+
+.modtager_reaktion {
+    animation-name: modtager_reaktion_kf;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(2);
+}
+
+@keyframes modtager_reaktion_kf {
+    0% {
+        background-position: 0 -300%;
+    }
+
+    100% {
+        background-position: -200% -300%;
+    }
+}
+
+/*** afslutning ***/
+
+#afslutning_glad_container {
+    position: absolute;
+}
+
+.afslutnende_glad_pos {
+    top: -10%;
+    left: 60%;
+}
+
+#afslutning_glad_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    width: 35vw;
+    height: 70vw;
+}
+
+
+.afslutning_glad {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(3);
+    animation-name: afslutning_glad_sprite_kf;
+}
+
+@keyframes afslutning_glad_sprite_kf {
+    0% {
+        background-position: 0 -700%;
+    }
+    100% {
+        background-position: -300% -700%;
+    }
+}
+
+#afslutning_graeder_container {
+    position: absolute;
+}
+
+.afslutnende_graeder_pos {
+    top: -6%;
+    left: 60%;
+}
+
+#afslutning_graeder_sprite {
+    background-image: url(img/spritesexogsamfund2-02.svg);
+    background-size: 600% 800%;
+    width: 35vw;
+    height: 70vw;
+}
+
+
+
+
+.afslutning_graeder {
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(3);
+    animation-name: afslutning_graeder_sprite_kf;
+}
+
+@keyframes afslutning_graeder_sprite_kf {
+    0% {
+        background-position: 0 -600%;
+    }
+    100% {
+        background-position: -300% -600%;
+    }
+}
