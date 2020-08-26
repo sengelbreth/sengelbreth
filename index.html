@@ -1,18 +1,125 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>portfolio</title>
+  </head>
 
-  <title></title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <body>
+    <img src="img/Frontpage-01.svg" alt="splash billede" />
+    <div id="menu"></div>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <section id="forsidesection1">
+      <h1>Artwork</h1>
+      <div class="slideshow-container">
+        <div class="mySlides fade" id="im_1">
+          <img
+            src="art/Fan-art/Untitled-1-01.jpg"
+            style="width:100%"
+            class="kenburns"
+          />
+          <div class="slidetexttext"></div>
+        </div>
 
-</head>
+        <div class="mySlides fade" id="im_2">
+          <img
+            src="art/Various originals/lips.jpg"
+            style="width:100%"
+            class="kenburns"
+          />
+          <div class="slidetexttext"></div>
+        </div>
 
-<body>
-  <script src="js/scripts.js"></script>
-</body>
+        <div class="mySlides fade" id="im_3">
+          <img
+            src="art/Fan-art/perona.jpg"
+            style="width:100%"
+            class="kenburns"
+          />
+          <div class="slidetext"></div>
+        </div>
+
+        <div class="mySlides fade" id="im_4">
+          <img
+            src="art/Projekt-X/froste lake.jpg"
+            style="width:100%"
+            class="kenburns"
+          />
+          <div class="slidetext"></div>
+        </div>
+        <a id="next">&#10097;</a>
+        <a id="prev">&#10096;</a>
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot" id="dm_1"></span>
+        <span class="dot" id="dm_2"></span>
+        <span class="dot" id="dm_3"></span>
+        <span class="dot" id="dm_4"></span>
+      </div>
+    </section>
+    <section id="forsidesection2">
+      <div id="header"><h1>Current projects</h1></div>
+
+      <h1>Projekt X </h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img class="snail" src="art/Projekt-X/snail1.JPG" />
+          <img class="snail" src="art/Projekt-X/snail2.JPG" />
+          <img class="snail" src="art/Projekt-X/snail3.JPG" />
+          <img class="snail" src="art/Projekt-X/snail4.JPG" />
+          <img class="snail" src="art/Projekt-X/snail5.JPG" />
+          <img class="snail" src="art/Projekt-X/snail6.JPG" />
+          <img class="snail" src="art/Projekt-X/snail7.JPG" />
+          <img class="snail" src="art/Projekt-X/snail8.JPG" />
+      
+        </div>
+        <div class="grid-item">
+          <div class="projecttext">
+            <p>
+              Projekt X is a series of images meant to illustrate a fantasy universe, this is a series of images showing the progess of one of the drawings. To find more look under <a href="art.html">artworks</a></p>
+          </div>
+        </div>
+      </div>
+
+      <h1>The Keto cookbook</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img class="cookbook" src="img/Screenshot_2.png" />
+          <img class="cookbook" src="img/Screenshot_1.png" />
+          <img class="cookbook" src="img/Screenshot_3.png" />
+        </div>
+        <div class="grid-item">
+          <div class="projecttext">
+            <p>
+              The Keto cookbook, is a pet project. The goal for the projekt is
+              not a finished cookbook. But more about the journey.
+            </p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <embed
+            src="keto cookbook.pdf"
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          />
+        </div>
+        <div class="grid-item">
+          <div class="projecttext">
+            <p>
+              This pdf is the cookbook at it's current state.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer id="footer"></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

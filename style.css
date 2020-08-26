@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Niramit");
+@import url("https://fonts.googleapis.com/css?family=Amiko");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222222;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- svg --- */
+svg {
+  width: 100vw;
+}
+
+/* --- svg slut --- *7
+
+/* ----- Menu ------ */
+#menu {
+  position: sticky;
+}
+
+#navigation {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+  width: 100vw;
+  /* border-bottom: 3px solid #f341cc; */
+  box-shadow: 0px 3px #666566;
+}
+
+#navigation a {
+  padding: 30px;
+  background-color: #000;
+  text-decoration: none;
+  color: #666566;
+  font-size: 2em;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 40%;
+  /*  flex-grow: 1; */
+  text-decoration: none;
+}
+
+/*----------------- media -------------------------*/
+
+@media only screen and (max-width: 600px) {
+  #navigation a {
+    padding: 15px;
+    font-size: 10px;
+  }
+
+  #navigation a:hover {
+    text-decoration: none;
+    box-shadow: none;
+    /*border-bottom: 7px solid #f341cc; */
+    color: #fff;
+  }
+
+  #navigation {
+    box-shadow: 0px 1px #666566;
+  }
+}
+
+/* ---- sticky menu --- */
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+/* ---- sticky menu slut --- */
+
+/* --- menu hover --- */
+
+#navigation a:hover {
+  text-decoration: none;
+  box-shadow: 0px 7px #fff;
+  /*border-bottom: 7px solid #f341cc; */
+  color: #fff;
+}
+
+/* --- menu hover slut --- */
+
+/* ------ Menu slut ------ */
+
+#content {
+  width: 100vw;
+}
+
+/* --- gallery --- */
+#portfolio {
+  margin: 2rem 2rem;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%;
+}
+
+.tile img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+.text a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Niramit", sans-serif;
+  text-decoration: none;
+}
+
+/* --- gallery hover --- */
+.tile {
+  position: relative;
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.tile:hover .image {
+  opacity: 0.1;
+}
+
+.tile:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1em;
+  font-family: "Niramit", sans-serif;
+}
+
+/* --- gallery hover slut --- */
+/* --- gallery slut --- */
+
+/* --- footer --- */
+
+footer {
+  width: 100vw;
+  height: 150px;
+  background-image: url(img/footerbillede-01.png);
+  padding: 5vw;
+}
+
+.footeroverlay {
+  background-color: #666566;
+  width: 90vw;
+
+  height: 150px;
+  opacity: 1;
+}
+
+#contentfooter img {
+  width: 3vw;
+}
+
+#contentfooter p {
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+
+#contentfooter .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#contentfooter .grid-item {
+  margin-top: 1vw;
+  margin-left: 0.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  #contentfooter .grid-item .smalltext {
+    display: none;
+  }
+  #contentfooter p {
+    font-family: "Amiko", sans-serif;
+    font-weight: bold;
+    font-size: 0.4em;
+  }
+
+  #contentfooter img {
+    width: 6vw;
+  }
+
+  .footeroverlay {
+    height: 80px;
+  }
+
+  footer {
+    height: 80px;
+  }
+}
+#contentfooter .grid-item .smalltext {
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  font-size: 0.6em;
+}
+#contentfooter a {
+  text-decoration: none;
+  color: #000;
+}
+/* --- footer slut ---  */
+
+/* slideshow  art */
+
+.mySlides {
+  display: none;
+}
+.slideshow-container img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90vw;
+  position: relative;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow: hidden;
+  height: 500px;
+  margin-top: 3vw;
+}
+
+/* Next & previous buttons */
+#prev,
+#next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover,
+#next:hover {
+  background-color: rgba(255, 255, 255, 0.64);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.64);
+}
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.64);
+}
+@media only screen and (max-width: 600px) {
+  #prev,
+  #next {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+  .slideshow-container {
+    max-width: 90vw;
+    position: relative;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    overflow: hidden;
+    height: 200px;
+    margin-top: 3vw;
+  }
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 9s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.kenburns {
+  animation: kenburns 11s infinite;
+}
+
+@keyframes kenburns {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    transform: scale3d(1.3, 1.3, 1.3) translate3d(10px, 10px, 10px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  100% {
+    transform: scale3d(2, 2, 2) translate3d(10px, 10px, 10px);
+    opacity: 0;
+  }
+}
+
+.slidetext {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  right: 5%;
+  font-family: "Amiko", sans-serif;
+  font-weight: 700;
+  text-align: right;
+}
+/* slideshow  art slut */
+
+/* forside */
+#forsidesection1 h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 2vw;
+}
+
+#forsidesection1 {
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+#forsidesection2 h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+
+#header {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0px 3px #666566;
+}
+
+#forsidesection2 .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 1vw;
+  margin:0vw 5vw 0vw 5vw ;
+}
+
+
+
+ .cookbook {
+  width: 24vw;
+  margin: 0;
+  transition: transform 0.2s;
+  padding: 0;
+}
+
+.cookbook:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+ .snail {
+  width: 15vw;
+  margin: 0;
+  transition: transform 0.2s;
+  padding: 0;
+}
+
+.snail:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.projecttext {
+  background-color: #000;
+  opacity: 0.5;
+  width: 20vw;
+  height: 100%;
+}
+.projecttext p {
+  color: #fff;
+  text-align: center;
+  font-family: "Amiko", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.projecttext p a {
+  text-decoration: none;
+  color: #fff;
+
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+/* forside slut*/

@@ -1,0 +1,74 @@
+/* --- about --- */
+
+#contentAbout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5em;
+    color: #fff;
+  }
+  
+  #contentAbout .grid-item {
+    font-size: 30px;
+    padding-top:5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  
+  .abouttext {
+
+    margin-top:5vw;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  #skill {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  #cv {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  .circle {
+    width: 19vw;
+    height: 19vw;
+    border: solid 5px #000;
+    border-radius: 50%;
+    background-image: url(img/profileimage.png);
+    background-size: cover;
+  }
+
+  #sidenav a {
+    text-decoration: none;
+    color: #666566;
+    font-size: 1em;
+    font-family: "Varela Round", sans-serif;
+  }
+  
+  #sidenav {
+    list-style-type: none;
+    margin-left: 7vw;
+    padding-top: 2vw;
+  }
+  
+  #sidenav a:hover {
+    color: #fff;
+  }
+  
+  .skill {
+    width: 10vw;
+    padding-top: 3 vw;
+ 
+  }
+  
+  .icon {
+    width: 10vw;
+  
+  }
+
+  h1 {
+    padding-bottom: 1vw;
+    padding-top: 2vw;
+  }
