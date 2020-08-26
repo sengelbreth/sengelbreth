@@ -1,0 +1,138 @@
+/* ----------------------------- Om os ----------------------------------*/
+
+#om_os #icon {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#om_os .gridcon {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+
+}
+
+#om_os #icons img {
+    width: 12vw;
+    padding: 1vw;
+
+}
+
+#om_os .splash {
+    margin-left: 0;
+}
+
+#icons {
+    background-image: url(background/Leaves.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#icons .griditem {
+    margin: 2vw;
+
+}
+
+.griditem {
+    flex-grow: 1;
+    line-height: 1.7;
+
+    text-align: center;
+    width: 33%;
+    color: #282828;
+}
+
+.griditem p {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+
+#om_os_b {
+    width: 100vw;
+    margin-left: 0;
+    position: relative;
+    background-image: url(background/Leaves.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+#om_os_b .griditem {
+    background-color: #76d2d1;
+    padding: 2vw;
+    border-radius: 20px;
+    text-align: left;
+    color: #f9f9f9;
+}
+
+#icons h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #76d2d1;
+}
+
+#icons p,
+#icons h2 {
+    color: #282828;
+}
+
+/* -------------------------- om os media ----------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    #om_os .griditem {
+        width: 100%;
+        margin: 0;
+        margin-top: -1vw;
+        padding: 5vw;
+        border-radius: 0;
+    }
+    #om_os .gridcon {
+        display: block;
+        width: 93%;
+        margin: 0;
+
+    }
+
+    #om_os_b {
+        background-image: none;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    #om_os_b p {
+        text-align: left;
+    }
+
+    #om_os #icons img {
+        width: 25vw;
+        padding: 5vw;
+    }
+
+    #om_os #icons p {
+        text-align: center;
+    }
+
+
+    #om_os .griditem p {
+        width: 93%;
+
+
+    }
+
+    #om_os .griditem h1 {
+        text-align: center;
+    }
+
+    #om_os .griditem h3 {
+        text-align: center;
+    }
+
+
+}
