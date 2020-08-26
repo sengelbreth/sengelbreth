@@ -1,0 +1,347 @@
+/*generel*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 10vw;
+    margin-top: 0;
+}
+
+
+/*menu*/
+
+.menubar_content {
+    font-size: 1.8vw;
+    text-align: center;
+    background-color: rgba(102, 51, 153, 0.8);
+    padding: 0.8vw;
+    border-radius: 50px;
+    margin: 1vw 11vw 1vw 11vw;
+}
+
+.menubar_content a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: inline-block;
+    font-family: 'Lora', bold, serif;
+}
+
+a:hover {
+    color: #ff9900;
+}
+
+@media screen and (max-width: 413px) {
+    header a {
+        font-size: 4vw;
+    }
+}
+
+
+/*menu slut*/
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3vw;
+    text-align: center;
+    color: rgb(102, 51, 153);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0 11vw 0 11vw;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #3F1D54;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #AE1F80;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #EE5898;
+}
+
+h5 {
+    color: #2BBACE;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #3F1D54;
+}
+
+img {
+    width: 100%;
+    position: relative;
+}
+
+.img_box {
+    flex-grow: 1;
+    flex-basis: 400px;
+    align-self: flex-end;
+    margin: 1vw;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_box:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+/*forside */
+
+#forside body {
+    background-image: url(billeder/forside/forsidebillede.jpg);
+    background-repeat: no-repeat repeat;
+    background-size: 100%;
+    /*background-attachment: fixed;   gør at billedet ikke rykker sig når man scroller*/
+}
+
+#forside .column_wide {
+    flex-grow: 4;
+    flex-basis: 400px;
+    padding: 1vw;
+    margin: 1vw;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.column_narrow {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 1vw;
+    margin: 1vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.hs-responsive-embed-youtube iframe,
+video {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+    left: 0px;
+}
+
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    padding-top: 10px;
+}
+
+#forside column_narrow img {
+    max-width: 200px;
+}
+
+
+/*forside slut*/
+
+
+/*foto*/
+
+.foto_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*foto slut*/
+
+
+/*menu siden*/
+
+#menu body {
+    background-image: url(billeder/menu/baggrundsbilldefilter.jpg);
+    background-repeat: no-repeat repeat;
+    background-size: 100%;
+}
+
+#menu p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.menu_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+}
+
+.content_bottom {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.menu_box {
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+    margin: 1vw;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom_box {
+    flex-grow: 1;
+    text-align: center;
+    margin: 1vw;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu_tider {
+    margin: 1vw;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+/*menu siden*/
+
+
+/*musik side*/
+
+#musik .content_musik h5 {
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#musik .content_musik h2 {
+    margin-bottom: 0px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+#musik i {
+    text-align: center;
+}
+
+#musik .foto_container p {
+    text-align: center;
+}
+
+#musik,
+#foto {
+    background-color: rgba(128, 0, 128, 0.2);
+}
+
+.musik_foto {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 1em;
+    align-self: flex-end;
+}
+
+.content_musik {
+    margin: 1vw 11vw 1vw 11vw;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.musik_foto {
+    flex-grow: 1;
+    flex-basis: 400px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.musik_foto:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+/*musik side*/
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2vw 11vw 0vw 11vw;
+    justify-content: center;
+    background-color: rgba(102, 51, 153, 0.8);
+    padding: 1vw;
+}
+
+footer p {
+    color: white;
+}
+
+.footer_left {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    margin-bottom: 1.5vw;
+    color: white;
+}
+
+.footer_left h4 {
+    color: white;
+}
+
+.footer_center {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    margin-bottom: 1.5vw;
+    color: white;
+}
+
+.footer_center h4 {
+    color: white;
+}
+
+.footer_right {
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    color: white;
+}
+
+.footer_right h4 {
+    color: white;
+}
+
+
+/*footer slut*/
+
+@media screen and (min-width: 688px) and (orientation: landscape) {
+    .foto_container {
+        flex-wrap: nowrap;
+        display: flex;
+    }
+}
